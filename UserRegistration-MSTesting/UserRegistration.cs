@@ -16,5 +16,12 @@ namespace UserRegistration_MSTesting
 
             return matches;
         }
+        public bool LastName(string Name)
+        {
+            Regex lastName = new Regex(@"^([A-Z]{1}[a-z]{2,})$");
+            bool matches = lastName.IsMatch(Name);
+
+            return matches;
+        }
     }
 }

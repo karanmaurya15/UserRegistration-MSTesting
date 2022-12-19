@@ -13,5 +13,13 @@ namespace TestProject_UserRegistration
 
             Assert.IsTrue(result);
         }
+        [TestMethod]
+        public void TestLastName()
+        {
+            UserRegistration user = new UserRegistration();
+            bool result = user.LastName("Kushwaha");
+
+            Assert.IsTrue(result);
+        }
     }
 }

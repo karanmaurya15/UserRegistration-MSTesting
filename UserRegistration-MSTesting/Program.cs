@@ -10,6 +10,10 @@
             Console.Write("Enter First Name : ");
             string firstName = Console.ReadLine();
             user.FirstName(firstName);
+
+            Console.Write("Enter Last Name : ");
+            string LastName = Console.ReadLine();
+            Console.WriteLine(user.LastName(LastName));
         }
     }
 }
