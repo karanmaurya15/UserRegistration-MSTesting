@@ -25,7 +25,7 @@ namespace TestProject_UserRegistration
         public void TestEmail()
         {
             UserRegistration user = new UserRegistration();
-            bool result = user.Email("abc.Karan@bl.co.in");
+            bool result = user.EmailId("abc.Karan@bl.co.in");
 
             Assert.IsTrue(result);
         }

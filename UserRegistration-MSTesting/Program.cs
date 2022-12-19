@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Wellcome to User Registration MS testing Program");
+            Console.WriteLine("Wellcome to User Registration MS testing Program\n");
 
             UserRegistration user = new UserRegistration();
             Console.Write("Enter First Name : ");
@@ -17,7 +17,7 @@
 
             Console.Write("Enter Email ID : ");
             string email = Console.ReadLine();
-            Console.WriteLine(user.Email(email));
+            Console.WriteLine(user.EmailId(email));
         }
     }
 }

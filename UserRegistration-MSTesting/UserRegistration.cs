@@ -12,20 +12,20 @@ namespace UserRegistration_MSTesting
         public bool FirstName(string Name)
         {
             Regex firstName = new Regex(@"^([A-Z]{1}[a-z]{2,})$");
-            bool matches = firstName.IsMatch(Name);
-            return matches;
+            bool regex = firstName.IsMatch(Name);
+            return regex;
         }
         public bool LastName(string Name)
         {
             Regex lastName = new Regex(@"^([A-Z]{1}[a-z]{2,})$");
-            bool matches = lastName.IsMatch(Name);
-            return matches;
+            bool regex = lastName.IsMatch(Name);
+            return regex;
         }
-        public bool Email(string email)
+        public bool EmailId(string email)
         {
             Regex emailID = new Regex(@"^(abc)[A-Za-z0-9_\+\-\.]*[@](bl)*[.](co)*[.][a-z]{2}$");
-            bool matches = emailID.IsMatch(email);
-            return matches;
+            bool regex = emailID.IsMatch(email);
+            return regex;
         }
     }
 }
