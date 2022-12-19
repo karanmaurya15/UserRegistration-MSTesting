@@ -22,6 +22,10 @@
             Console.Write("Enter Mobile Number with Country Code : ");
             string mobileNumber = Console.ReadLine();
             Console.WriteLine(user.MobileNumber(mobileNumber));
+
+            Console.WriteLine("Enter Password at least 8 Characters : ");
+            string password = Console.ReadLine();
+            Console.WriteLine(user.Password(password));
         }
     }
 }

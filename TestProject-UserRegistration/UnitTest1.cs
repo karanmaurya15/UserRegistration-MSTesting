@@ -20,7 +20,7 @@ namespace TestProject_UserRegistration
             Assert.IsTrue(result);
         }
         [TestMethod]
-        public void TestEmail()
+        public void TestEmailId()
         {
             UserRegistration user = new UserRegistration();
             bool result = user.EmailId("abc.Karan@bl.co.in");
@@ -31,6 +31,13 @@ namespace TestProject_UserRegistration
         {
             UserRegistration user = new UserRegistration();
             bool result = user.MobileNumber("+91 9064278954");
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void TestPassword()
+        {
+            UserRegistration user = new UserRegistration();
+            bool result = user.Password("Saurabh13");
             Assert.IsTrue(result);
         }
     }
