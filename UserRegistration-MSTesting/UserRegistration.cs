@@ -23,8 +23,8 @@ namespace UserRegistration_MSTesting
         }
         public bool EmailId(string email)
         {
-            Regex emailID = new Regex(@"^(abc)[A-Za-z0-9_\+\-\.]*[@](bl)*[.](co)*[.][a-z]{2}$");
-            bool regex = emailID.IsMatch(email);
+            Regex emailId = new Regex(@"^(abc)[A-Za-z0-9_\+\-\.]*[@](bl)*[.](co)*[.][a-z]{2}$");
+            bool regex = emailId.IsMatch(email);
             return regex;
         }
         public bool MobileNumber(string mobileNumber)
@@ -35,7 +35,7 @@ namespace UserRegistration_MSTesting
         }
         public bool Password(string password)
         {
-            Regex pass = new Regex("^[A-za-z0-9]{8,}");
+            Regex pass = new Regex("^(?=.*[a-z])(?=.*[A-Z]).{8,}$");
             bool regex = pass.IsMatch(password);
             return regex;
         }

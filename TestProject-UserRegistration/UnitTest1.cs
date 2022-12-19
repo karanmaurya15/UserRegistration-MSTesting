@@ -34,10 +34,17 @@ namespace TestProject_UserRegistration
             Assert.IsTrue(result);
         }
         [TestMethod]
-        public void TestPassword()
+        public void TestPasswordRule1()
         {
             UserRegistration user = new UserRegistration();
             bool result = user.Password("Saurabh13");
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void TestPasswordRule2()
+        {
+            UserRegistration user = new UserRegistration();
+            bool result = user.Password("sauraBhChau");
             Assert.IsTrue(result);
         }
     }
