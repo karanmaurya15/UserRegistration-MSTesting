@@ -26,6 +26,10 @@
             Console.WriteLine("Enter Password With 1 Captial latter,1 numeric number and 1 special Character min  8 Characters : ");
             string password = Console.ReadLine();
             Console.WriteLine(user.Password(password));
+
+            Console.Write("Enter Email Id Given in Chart : ");
+            string emailId = Console.ReadLine();
+            Console.WriteLine(user.SampleEmail(emailId));
         }
     }
 }

@@ -44,7 +44,7 @@ namespace TestProject_UserRegistration
         public void TestPasswordRule2()
         {
             UserRegistration user = new UserRegistration();
-            bool result = user.Password("sauraBhChau");
+            bool result = user.Password("sauraBh6ach");
             Assert.IsTrue(result);
         }
         [TestMethod]
@@ -59,6 +59,13 @@ namespace TestProject_UserRegistration
         {
             UserRegistration user = new UserRegistration();
             bool result = user.Password("sauraBh@13k");
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void TestEmailSample()
+        {
+            UserRegistration user = new UserRegistration();
+            bool result = user.SampleEmail("abc.100@abc.com.au");
             Assert.IsTrue(result);
         }
     }
