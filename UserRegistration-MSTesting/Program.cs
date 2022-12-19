@@ -18,6 +18,10 @@
             Console.Write("Enter Email ID : ");
             string email = Console.ReadLine();
             Console.WriteLine(user.EmailId(email));
+
+            Console.Write("Enter Mobile Number with Country Code : ");
+            string mobileNumber = Console.ReadLine();
+            Console.WriteLine(user.MobileNumber(mobileNumber));
         }
     }
 }
