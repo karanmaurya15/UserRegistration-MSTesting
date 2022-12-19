@@ -54,5 +54,12 @@ namespace TestProject_UserRegistration
             bool result = user.Password("sauraBh13k");
             Assert.IsTrue(result);
         }
+        [TestMethod]
+        public void TestPasswordRule4()
+        {
+            UserRegistration user = new UserRegistration();
+            bool result = user.Password("sauraBh@13k");
+            Assert.IsTrue(result);
+        }
     }
 }

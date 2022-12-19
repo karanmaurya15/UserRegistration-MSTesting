@@ -35,7 +35,7 @@ namespace UserRegistration_MSTesting
         }
         public bool Password(string password)
         {
-            Regex pass = new Regex("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,}$");
+            Regex pass = new Regex("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*\\D\\W).\\S{8,}$");
             bool regex = pass.IsMatch(password);
             return regex;
         }

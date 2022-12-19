@@ -23,7 +23,7 @@
             string mobileNumber = Console.ReadLine();
             Console.WriteLine(user.MobileNumber(mobileNumber));
 
-            Console.WriteLine("Enter Password With 1 Captial latter  and 1 numeric min  8 Characters : ");
+            Console.WriteLine("Enter Password With 1 Captial latter,1 numeric number and 1 special Character min  8 Characters : ");
             string password = Console.ReadLine();
             Console.WriteLine(user.Password(password));
         }
