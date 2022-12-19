@@ -13,14 +13,18 @@ namespace UserRegistration_MSTesting
         {
             Regex firstName = new Regex(@"^([A-Z]{1}[a-z]{2,})$");
             bool matches = firstName.IsMatch(Name);
-
             return matches;
         }
         public bool LastName(string Name)
         {
             Regex lastName = new Regex(@"^([A-Z]{1}[a-z]{2,})$");
             bool matches = lastName.IsMatch(Name);
-
+            return matches;
+        }
+        public bool Email(string email)
+        {
+            Regex emailID = new Regex(@"^(abc)[A-Za-z0-9_\+\-\.]*[@](bl)*[.](co)*[.][a-z]{2}$");
+            bool matches = emailID.IsMatch(email);
             return matches;
         }
     }

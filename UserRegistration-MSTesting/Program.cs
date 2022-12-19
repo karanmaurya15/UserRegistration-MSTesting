@@ -9,11 +9,15 @@
             UserRegistration user = new UserRegistration();
             Console.Write("Enter First Name : ");
             string firstName = Console.ReadLine();
-            user.FirstName(firstName);
+            Console.WriteLine(user.FirstName(firstName));
 
             Console.Write("Enter Last Name : ");
             string LastName = Console.ReadLine();
             Console.WriteLine(user.LastName(LastName));
+
+            Console.Write("Enter Email ID : ");
+            string email = Console.ReadLine();
+            Console.WriteLine(user.Email(email));
         }
     }
 }
